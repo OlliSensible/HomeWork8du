@@ -1,20 +1,16 @@
 package homeWork;
 import java.util.Scanner;
 
-public class ShapePrint {
+public class ScannerMathAreaForShape {
     private Scanner scanner;
 
-    public ShapePrint() {
+    public ScannerMathAreaForShape() {
         scanner = new Scanner(System.in);
-    }
-
-    public void printShapeName(Shape shape) {
-        System.out.println(shape.getShapeName());
     }
 
     public void calculateAndPrintArea(Shape shape) {
         double area = 0.0;
-        Color color;
+        Colors colors = new Colors();
 
         if (shape instanceof Circle) {
             System.out.print("Enter the radius of the circle: ");
@@ -46,15 +42,8 @@ public class ShapePrint {
 
         area = Math.round(area * 100.0) / 100.0;
 
-        if (area < 20) {
-            color = Color.RED;
-        } else if (area >= 20 && area <= 50) {
-            color = Color.YELLOW;
-        } else {
-            color = Color.BLUE;
-        }
-
         System.out.println("Area of the shape: " + area);
+        Color color = colors.whichColor((int) area);
         System.out.println("Color: " + color);
     }
 }

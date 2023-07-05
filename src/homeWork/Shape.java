@@ -1,8 +1,6 @@
 package homeWork;
 
-abstract class Shape {
-        String getShapeName() {
-            return null;
-        }
+public abstract class Shape {
+    abstract String getName();
 
 }

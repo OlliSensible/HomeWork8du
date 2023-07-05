@@ -1,12 +1,9 @@
 package homeWork;
 import java.util.Scanner;
 
-public class ShapeTest {
+public class ShapeTestInput {
     public static void main(String[] args) {
-        ShapePrint print = new ShapePrint();
-
         Scanner scanner = new Scanner(System.in);
-
         Shape shape;
 
         boolean validShape = false;
@@ -41,7 +38,7 @@ public class ShapeTest {
             }
         } while (!validShape);
 
-        print.printShapeName(shape);
-        print.calculateAndPrintArea(shape);
+        ScannerMathAreaForShape scannerHelp = new ScannerMathAreaForShape();
+        scannerHelp.calculateAndPrintArea(shape);
     }
 }

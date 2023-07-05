@@ -2,7 +2,8 @@ package homeWork;
 
 public class Oval extends Shape{
     @Override
-    public String getShapeName() {
+    public String getName() {
+
         return "Oval";
     }
 }

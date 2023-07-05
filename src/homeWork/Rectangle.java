@@ -2,7 +2,9 @@ package homeWork;
 
 public class Rectangle extends Shape{
     @Override
-    public String getShapeName() {
+    public String getName() {
+
         return "Rectangle";
     }
+
 }
