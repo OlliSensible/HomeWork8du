@@ -1,6 +1,6 @@
 package homeWork;
 
-public class Rectangle implements Shape{
+public class Rectangle extends Shape{
     @Override
     public String getShapeName() {
         return "Rectangle";

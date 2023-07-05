@@ -1,6 +1,6 @@
 package homeWork;
 
-public class Oval implements Shape{
+public class Oval extends Shape{
     @Override
     public String getShapeName() {
         return "Oval";

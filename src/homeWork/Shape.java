@@ -1,7 +1,8 @@
 package homeWork;
 
-public interface Shape {
-    String getShapeName();
+abstract class Shape {
+        String getShapeName() {
+            return null;
+        }
 
 }
-
